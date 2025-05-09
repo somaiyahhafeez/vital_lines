@@ -1,0 +1,224 @@
+<!-- single-page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vital Lines — Women's Health Journalism From the Ground Up</title>
+  <meta name="description" content="Vital Lines is a multilingual magazine reporting on global women's health, reproductive rights, and gender justice through local investigative journalism." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #fffdfa;
+      color: #1f1f1f;
+      line-height: 1.6;
+    }
+    header {
+      background: #fdf4f0;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 0.25rem;
+      color: #d13a58;
+    }
+    header p {
+      font-size: 1.1rem;
+      max-width: 640px;
+      margin: 0 auto;
+      color: #444;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1400x600') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      padding: 1rem 2rem;
+      background: rgba(0,0,0,0.4);
+      border-radius: 8px;
+    }
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+    .section h3, .section h4 {
+      font-family: 'Playfair Display', serif;
+      color: #d13a58;
+    }
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .story-grid article {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #eee;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .story-grid article:hover {
+      transform: translateY(-5px);
+    }
+    .story-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .newsletter {
+      background: #f7f0ec;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+      border-radius: 12px;
+    }
+    .newsletter input[type="email"] {
+      padding: 0.8rem;
+      width: 250px;
+      max-width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+    }
+    .newsletter button {
+      padding: 0.8rem 1.2rem;
+      background-color: #d13a58;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background: #f0eeee;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="vital-logo.png" alt="Vital Lines Logo" height="80" />
+    <h1>Vital Lines</h1>
+    <p>Reporting from the lifelines of women’s health and human rights — by local journalists, in their own voice.</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#issues">Monthly Issues</a>
+    <a href="#stories">All Stories</a>
+    <a href="#about">About</a>
+    <a href="#contribute">Contribute</a>
+  </nav>
+  <main>
+    <section class="section featured">
+      <h3>Featured Investigations</h3>
+      <div class="story-grid">
+        <article>
+          <img src="https://via.placeholder.com/400x200" alt="Investigation 1">
+          <h4>Reproductive Coercion in [Country]</h4>
+          <p>An in-depth report on systemic violations affecting women's autonomy, by local reporter [Name].</p>
+        </article>
+        <article>
+          <img src="https://via.placeholder.com/400x200" alt="Investigation 2">
+          <h4>Eco-Feminist Resistance in the Amazon</h4>
+          <p>How Indigenous women are defending land and life in the face of extractive industries.</p>
+        </article>
+        <article>
+          <img src="https://via.placeholder.com/400x200" alt="Investigation 3">
+          <h4>How Surveillance Targets Period Tracking Apps</h4>
+          <p>A cross-border collaboration on the tech, politics, and data privacy of reproductive health.</p>
+        </article>
+      </div>
+    </section>
+    <section id="issues" class="section">
+      <h3>Monthly Issues</h3>
+      <article>
+        <h4>April 2025: Borders and Bodies</h4>
+        <p>Stories from conflict zones and migration corridors.</p>
+      </article>
+      <article>
+        <h4>March 2025: Ecofeminism in Action</h4>
+        <p>Indigenous resistance to extractive industries and gender-based violence.</p>
+      </article>
+    </section>
+    <section id="stories" class="section">
+      <h3>All Stories</h3>
+      <article>
+        <h4>Grassroots Birth Control Initiatives in West Africa</h4>
+        <p>How women are reclaiming agency in reproductive health access.</p>
+      </article>
+      <article>
+        <h4>Water as a Women's Rights Issue</h4>
+        <p>How water scarcity disproportionately affects women and girls in rural communities.</p>
+      </article>
+    </section>
+    <section id="about" class="section">
+      <h3>About Vital Lines</h3>
+      <p><strong>Vital Lines</strong> is a digital, multilingual magazine that amplifies the work of women journalists reporting on reproductive rights, health, and justice in underreported regions.</p>
+      <h4>Our Mission</h4>
+      <p>We prioritize trauma-informed journalism, fair pay, and publishing in local languages to challenge the colonial frameworks of international reporting.</p>
+      <h4>Our Team</h4>
+      <ul>
+        <li>Editor-in-Chief — Based in NYC</li>
+        <li>Regional Editors — Remote contributors</li>
+        <li>Freelance Translators and Local Reporters</li>
+        <li>Fact-checkers and Coordinators</li>
+      </ul>
+    </section>
+    <section id="contribute" class="section">
+      <h3>Contribute to Vital Lines</h3>
+      <h4>Support Our Work</h4>
+      <p>Vital Lines is a nonprofit initiative. Your donations and sponsorships help sustain ethical, independent journalism.</p>
+      <ul>
+        <li>Donate via PayPal or credit card</li>
+        <li>Sponsor a series or translation</li>
+        <li>Share our stories and mission</li>
+      </ul>
+      <h4>Pitch a Story</h4>
+      <p>We welcome pitches from local journalists and independent writers worldwide.</p>
+      <p>Email: <a href="mailto:pitches@vitallines.org">pitches@vitallines.org</a></p>
+    </section>
+    <section class="section newsletter">
+      <h3>Join Our Newsletter</h3>
+      <p>Get monthly stories from frontline reporters around the world — in your inbox.</p>
+      <form>
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Vital Lines Magazine • Independent Global Women's Journalism • Contact: hello@vitallines.org
+  </footer>
